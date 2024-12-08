@@ -50,6 +50,7 @@ jobs:
           haxelib install hxcpp-debug-server
           haxelib install discord_rpc     
           haxelib git lime https://github.com/mcagabe19-stuff/lime
+          haxelib install actuate
           haxelib install extension-androidtools
       - name: Configure Android
         if: startsWith(matrix.os, 'ubuntu')
