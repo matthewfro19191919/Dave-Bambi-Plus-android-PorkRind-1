@@ -66,7 +66,7 @@ jobs:
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
-        run: haxelib run lime build macos --debug
+        run: haxelib run lime build macos  --app-version="4.0.0-${{ github.run_id}}" -debug
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
