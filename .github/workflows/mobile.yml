@@ -51,6 +51,7 @@ jobs:
           haxelib install discord_rpc     
           haxelib git lime https://github.com/mcagabe19-stuff/lime
           haxelib install actuate
+          haxelib install hxCodec 2.5.1 
           haxelib install extension-androidtools
       - name: Configure Android
         if: startsWith(matrix.os, 'ubuntu')
