@@ -51,6 +51,7 @@ jobs:
           haxelib install hxcpp-debug-server
           haxelib install discord_rpc
           haxelib install actuate
+          haxelib install hxCodec 2.5.1 
           haxelib git lime https://github.com/mcagabe19-stuff/lime
       - name: Compile (Windows)
         if: startsWith(matrix.os, 'windows')
